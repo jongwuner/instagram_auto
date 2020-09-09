@@ -7,9 +7,9 @@ from selenium.common.exceptions import NoSuchElementException
 
 def login(driver) :
     id_form = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input')
-    id_form.send_keys('jjongwuner')
+    id_form.send_keys('id')
     pw_form = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input')
-    pw_form.send_keys('1j2k3l20^^')
+    pw_form.send_keys('pw')
     pw_form.submit()
     time.sleep(5)
 
